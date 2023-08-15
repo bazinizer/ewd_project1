@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <!-- Your head content here -->
+</head>
+<body>
+<h1>Animal List</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Breed</th>
+    <th>Birth Date</th>
+    <th>Reserved</th>
+  </tr>
+  <tr th:each="animal : ${animals}">
+    <td><a th:href="@{/animals/{id}(id=${animal.id})}" th:text="${animal.name}"></a></td>
+    <td th:text="${animal.breed}"></td>
+    <td th:text="${animal.birthDate}"></td>
+    <td th:text="${animal.reserved}"></td>
+  </tr>
+</table>
+</body>
+</html>

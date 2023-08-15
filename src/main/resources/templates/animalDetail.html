@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <!-- Your head content here -->
+</head>
+<body>
+<h1>Animal Detail</h1>
+<div>
+  <p><strong>Name:</strong> <span th:text="${animal.name}"></span></p>
+  <p><strong>Breed:</strong> <span th:text="${animal.breed}"></span></p>
+  <p><strong>Birth Date:</strong> <span th:text="${animal.birthDate}"></span></p>
+  <p><strong>Reserved:</strong> <span th:text="${animal.reserved}"></span></p>
+</div>
+</body>
+</html>
